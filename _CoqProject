@@ -1,3 +1,3 @@
--Q _build/default/theories TensorRocq
+-R _build/default/theories TensorRocq
 
--Q _build/default/Examples TensorRocqEx
+-R _build/default/Examples TensorRocqEx

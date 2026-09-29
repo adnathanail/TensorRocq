@@ -5,9 +5,11 @@ synopsis: "Examples of rewriting PROPs using rocq-tensors"
 maintainer: ["inQWIRE Developers"]
 authors: ["inQWIRE"]
 license: "MIT"
+homepage: "https://github.com/inQWIRE/tensor-rocq/"
+bug-reports: "https://github.com/inQWIRE/tensor-rocq/issues"
 depends: [
   "dune" {>= "2.8"}
-  "tensor-rocq" {>= "0.1.0"}
+  "rocq-tensors" {>= "0.1.0"}
   "odoc" {with-doc}
 ]
 build: [
@@ -24,3 +26,4 @@ build: [
     "@doc" {with-doc}
   ]
 ]
+dev-repo: "git+https://github.com/inQWIRE/tensor-rocq.git"

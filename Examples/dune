@@ -2,4 +2,5 @@
 (coq.theory
   (name TensorRocqEx)
   (package rocq-tensors-examples)
+  (theories TensorRocq)
 )

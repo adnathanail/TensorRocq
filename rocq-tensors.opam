@@ -6,8 +6,11 @@ synopsis:
 maintainer: ["inQWIRE Developers"]
 authors: ["inQWIRE"]
 license: "MIT"
+homepage: "https://github.com/inQWIRE/tensor-rocq/"
+bug-reports: "https://github.com/inQWIRE/tensor-rocq/issues"
 depends: [
   "dune" {>= "2.8"}
+  "rocq-stdpp" {>= "0"}
   "odoc" {with-doc}
 ]
 build: [
@@ -24,3 +27,4 @@ build: [
     "@doc" {with-doc}
   ]
 ]
+dev-repo: "git+https://github.com/inQWIRE/tensor-rocq.git"
