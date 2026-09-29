@@ -1,0 +1,26 @@
+{
+  "name": "TensorRocq",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      // The library builds on Rocq 8.20-9.1, but Examples/ needs 8.20, so 8.20
+      // is the only version that builds everything. Bump only if you do not
+      // need `make examples`.
+      "COQ_VERSION": "8.20"
+    }
+  },
+  "remoteUser": "coq",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // LSP server for stepping through the .v files; on Coq 8.x the opam
+        // package installed in the Dockerfile is coq-lsp.
+        "ejgallego.coq-lsp",
+        // inQWIRE's ZXViz extension, for rendering the VyZX diagrams in
+        // Examples/VyZXExample.v.
+        "inQWIRE.vizx",
+        "anthropic.claude-code"
+      ]
+    }
+  }
+}
